@@ -108,35 +108,5 @@ The GitHub Actions workflow includes:
 4. Pushing images to Docker Hub
 5. Deployment steps (would connect to your environment)
 
-## Project Structure
-
-```
-.
-├── .github
-│   └── workflows           # GitHub Actions workflows
-├── prometheus              # Prometheus configuration
-├── scripts                 # Utility scripts
-└── services                # Microservices
-    ├── api-gateway         # API Gateway service
-    ├── user-service        # User management service
-    ├── product-service     # Product management service
-    └── notification-service # Notification service
-```
-
-Each service follows a similar structure:
-
-```
-service/
-├── cmd/                    # Main entry points
-├── internal/               # Private application code
-│   ├── config/             # Configuration
-│   ├── database/           # Database access
-│   ├── handlers/           # HTTP handlers
-│   ├── middleware/         # HTTP middleware
-│   ├── models/             # Data models
-│   ├── repository/         # Data access layer
-│   └── service/            # Business logic
-├── migrations/             # Database migrations
-├── Dockerfile              # Container definition
 └── go.mod                  # Dependencies
 ```
