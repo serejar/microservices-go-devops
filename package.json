@@ -1,0 +1,11 @@
+{
+  "name": "go-microservices",
+  "private": true,
+  "scripts": {
+    "start": "docker-compose up",
+    "build": "docker-compose build",
+    "test": "go test ./...",
+    "lint": "golangci-lint run",
+    "down": "docker-compose down"
+  }
+}
